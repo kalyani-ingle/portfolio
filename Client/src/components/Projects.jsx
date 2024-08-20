@@ -15,7 +15,7 @@ function Projects() {
           <h1 style={{textAlign:"center", margin:"12px", color:"deeppink", fontFamily:"Sacramento", transition: "transform 0.2s ease-out", fontSize:"55px"}}> My Projects </h1>
           <CardActionArea>
             <Grid container spacing={2}>
-            <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardMedia
                   style={{ padding: "20px" }}
                   component="img"
@@ -26,7 +26,7 @@ function Projects() {
                   id="petPortal"
                 />
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -66,7 +66,7 @@ function Projects() {
                     </ul>
                   </Typography>
                   <CardActions>
-                    <Link to ="https://pet-portal-seven.vercel.app" target="_blank"> 
+                    <Link to ="https://pet-registration-portal.vercel.app" target="_blank"> 
                         Live Demo
                     </Link>
                   </CardActions>
@@ -80,7 +80,7 @@ function Projects() {
         <Card>
           <CardActionArea>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardMedia
                   style={{ padding: "20px" }}
                   component="img"
@@ -90,7 +90,7 @@ function Projects() {
                   className="card-image todo"
                 />
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -105,7 +105,7 @@ function Projects() {
                     color="text.secondary"
                     className="subtitle"
                   >
-                    SVELTE | JAVASCRIPT | CSS | HTML
+                    SVELTE | CSS | HTML
                   </Typography>
                   <Typography
                     variant="body2"
@@ -151,7 +151,7 @@ function Projects() {
         <Card>
           <CardActionArea>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardMedia
                   style={{ padding: "20px" }}
                   component="img"
@@ -161,7 +161,7 @@ function Projects() {
                   className="card-image"
                 />
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -195,8 +195,7 @@ function Projects() {
                         preferred mark — X or O
                       </li>
                       <li>
-                        <strong>Dynamic Display:</strong> Witness real-time
-                        updates as the game dynamically highlights winning
+                        <strong>Dynamic Display:</strong> The game dynamically highlights winning
                         combinations and displays the victorious player.{" "}
                       </li>
                       <li>
@@ -221,7 +220,7 @@ function Projects() {
         <Card>
           <CardActionArea>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -270,13 +269,13 @@ function Projects() {
                     </ul>
                   </Typography>
                   <CardActions>
-                    <Link to="/" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://kalyani-ingle.github.io/calculator" target="_blank" rel="noopener noreferrer">
                           Live Demo
                       </Link>
                   </CardActions>
                 </CardContent>
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardMedia
                   style={{ padding: "20px" }}
                   component="img"
@@ -294,7 +293,7 @@ function Projects() {
         <Card>
           <CardActionArea>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -337,13 +336,13 @@ function Projects() {
                     </ul>
                   </Typography>
                   <CardActions>
-                    <Link to="https://kalyani-ingle.github.io/calculator" target="_blank" rel="noopener noreferrer">
+                    <Link to="/" target="_blank" rel="noopener noreferrer">
                         Live Demo
                     </Link>
                   </CardActions>
                 </CardContent>
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Grid item xs={12} sm={12} md={6} lg={6}>
                 <CardMedia
                   style={{ padding: "20px"}}
                   component="img"
