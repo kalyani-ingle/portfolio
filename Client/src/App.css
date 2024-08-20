@@ -1,0 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=serrat:ital,wght@0,100.Mont.900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: powderblue;
+  color: deeppink;
+}
+
+#root {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav bar styling */
+
+nav {
+  background: linear-gradient(
+    68.4deg,
+    rgb(248, 182, 204) 0.5%,
+    rgb(192, 198, 230) 49%,
+    rgb(225, 246, 240) 99.8%
+  );
+  width: 100%;
+  height: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  margin: 0 25px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  color: #ca1b7b;
+  padding: 0 10px;
+}
+
+nav ul li a:hover,
+form a:hover {
+  color: rgb(54, 151, 196);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff00ff,
+    #0000ff,
+    #0bb2b2,
+    #2ac108,
+    #9a9a0c,
+    #ff0000
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+
+/* nav bar styling */
+
+/* mini section styling */
+
+.mini {
+  min-height: 100vh;
+  min-width: 100%;
+  justify-items: center;
+  background: linear-gradient(
+    68.4deg,
+    rgb(248, 182, 204) 0.5%,
+    rgb(192, 198, 230) 49%,
+    rgb(225, 246, 240) 99.8%
+  );
+  padding-bottom: 2em;
+}
+/* mini section styling */
+
+/* intro section */
+.intro {
+  position: relative;
+  top: 11vh;
+}
+
+.intro p {
+  padding: 0.5em 0;
+  text-align: center;
+  font-size: 5em;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff00ff,
+    #0000ff,
+    #0bb2b2,
+    #2ac108,
+    #9a9a0c,
+    #ff0000
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowing 4s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/* intro section */
+
+/* cloud animation, mountain image and birds */
+.cloud1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 200px;
+  background-image: url("/vecteezy_white-cloud-clipart-design-illustration_9385577.png");
+  opacity: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: travel 10s linear infinite alternate;
+}
+
+.cloud2 {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  opacity: 60%;
+  background-image: url("/vecteezy_white-cloud-clipart-design-illustration_9630389.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: travel2 10s linear infinite alternate;
+}
+
+@keyframes travel {
+  0% {
+    left: 5%;
+    top: 15%;
+  }
+  50% {
+    left: 60px;
+    top: 20%;
+  }
+  100% {
+    left: 0;
+    top: 40%;
+  }
+}
+
+@keyframes travel2 {
+  0% {
+    right: 10px;
+    top: 10%;
+  }
+  50% {
+    right: 40px;
+    top: 30%;
+  }
+  100% {
+    right: 0;
+    top: 40%;
+  }
+}
+
+#mountain {
+  top: 20vh;
+  margin: auto;
+  height: 500px;
+  min-width: 100%;
+  background-image: url("/mountains-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 30%;
+}
+
+.bird1 {
+  top: 23vh;
+  background-image: url("/bird-unscreen.gif");
+  animation: birdAnimation 10s linear infinite;
+}
+
+.bird1,
+.bird2 {
+  position: absolute;
+  height: 500px;
+  width: 9%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bird2 {
+  top: 35vh;
+  background-image: url("/bird-flying-unscreen.gif");
+  animation: birdAnimation1 15s linear infinite;
+}
+
+@keyframes birdAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 10%);
+  }
+}
+
+@keyframes birdAnimation1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 5%);
+  }
+}
+/* cloud animation, mountain image and birds */
+
+#Home-btn {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.typewriter {
+  position: relative;
+  top: 7vh;
+  max-width: 80%;
+  display: inline;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+}
+
+/* Home */
+
+/* skills, About */
+
+#about {
+  padding: 70px 20px;
+  background-color: aliceblue;
+}
+
+.photo {
+  padding-bottom:1.2em;
+  width: 90%;
+  margin: auto;
+  border: 5px solid transparent;
+  background-color: rgba(239, 222, 239, 0.75);
+  box-shadow: 0 0 20px 0 powderblue, 0 0 40px 10px rgba(173, 216, 230, 0.8),
+    0 0 70px 20px rgba(173, 216, 230, 0.6);
+}
+
+.photo img {
+  display: block;
+  margin: 35px auto 0;
+  width: 170px;
+  height: 170px;
+  transition: 0.3s all ease-in-out;
+  border-radius: 50%;
+}
+
+.photo img:hover,
+.iconsBundle img:hover {
+  transform: scale(1.09);
+}
+
+.photo h1 {
+  text-align: center;
+  padding: 10px;
+  color: #ca1b7b;
+  text-shadow: 1.4px 1.4px lightblue;
+}
+
+.photo p {
+  margin-top: 12px;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 33px;
+}
+
+#about .MuiButton-root {
+  font-size: small;
+}
+
+.iconsBundle {
+  margin:12px;
+  padding: 2px;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(4em, 1fr));
+}
+
+.iconsBundle img {
+  width: 3.8em;
+  height: 3.8em;
+  margin: 1em;
+}
+
+/* skills */
+
+/* projects */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#innerProject {
+  margin: 70px;
+  padding: 5px;
+}
+
+#innerProject h1:hover {
+  transform: scale(3);
+  transition: transform 0.1s ease;
+}
+
+.card-title {
+  color: rgb(31, 204, 226);
+  font-family: "Montserrat", sans-serif;
+}
+
+.subtitle {
+  color: yellowgreen;
+}
+
+.card-content ul,
+.card-content ul > li {
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+}
+
+.card-image {
+  transition: transform 0.8s ease-out;
+}
+
+#innerProject h1:hover,
+.card-image:hover {
+  transform: scale(1.04);
+  transition: transform 0.8s ease;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: justify;
+}
+
+/* projects */
+
+/* contact form styling */
+
+#contact{
+  height:90vh;
+}
+
+.form {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-image: url("/public/contactBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 90%;
+}
+
+form {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 55px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+form h1 {
+  font-weight: 200;
+  font-size: 38px;
+  font-family: "Sacramento", cursive;
+  color: rgb(206, 83, 181);
+  text-align: center;
+  padding: 10px 25px;
+  letter-spacing: 4px;
+}
+
+form h5 {
+  font-weight: normal;
+  line-height: 28px;
+  color: #ec5990;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: medium;
+}
+
+form h5 a {
+  font-family: "Sacramento", cursive;
+  text-decoration: none;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 3.5px;
+}
+
+#socials {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#socials img {
+  width: 1.8em;
+  height: 1.8em;
+  margin: 0 6px;
+}
+
+#socials img:hover {
+  animation: spin 0.4s linear forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    scale: (2);
+  }
+  to {
+    transform: rotate(360deg);
+    scale: (2);
+  }
+}
+
+form p {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  align-content: center;
+  color: #bf1650;
+  height: 30px;
+  font-size: small;
+}
+
+.error-name {
+  top: 20.8em;
+}
+
+.error-email {
+  top: 27.3em;
+}
+
+.error-message {
+  top: 41em;
+}
+
+form p::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.input,
+.textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#contact .MuiTextField-root {
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 10px;
+  margin: auto;
+  background-image: linear-gradient(
+    68.4deg,
+    rgba(255, 192, 203, 0.4),
+    rgba(255, 255, 224, 0.5),
+    rgba(176, 224, 230, 0.3)
+  );
+}
+
+#contact .MuiTextField-root label {
+  line-height: 2;
+  text-align: left;
+  color: purple;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.MuiTextField-root .Mui-error {
+  color: #bf1650;
+}
+
+.MuiTextField-root .Mui-error .MuiInputBase-root {
+  border-color: #bf1650;
+}
+
+form button[type="submit"]:hover,
+form button[type="button"]:hover {
+  background: #bf1650;
+  cursor: pointer;
+}
+
+form button[type="submit"]:active,
+form button[type="button"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid lightskyblue;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+form button[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+form .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  padding: 5px;
+}
+
+#send,
+#reset {
+  width: 22%;
+  color: whitesmoke;
+  background: #ec5990;
+  margin: 8px;
+}
+
+#successGif,
+#errorGif {
+  position: relative;
+  animation: fly 7s linear forwards;
+}
+
+@keyframes fly {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* contact form styling */
+
+/* footer */
+
+#footer {
+  background-color: rgb(216, 242, 246);
+  opacity: 70%;
+}
+
+#footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(235, 119, 80);
+}
+
+.scroll-up {
+  position: fixed;
+  right: 1%;
+  bottom: 6%;
+  cursor: pointer;
+  color: rgba(156, 79, 245, 0.778);
+}
+
+/* footer */
+
+/* media query */
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul li a {
+    margin: 0 18px;
+    font-size: small;
+    padding: 0 10px;
+  }
+
+  .intro {
+    top: 24vh;
+  }
+
+  .intro p {
+    padding: 0.2em 0;
+    font-size: 2.6em;
+    text-align: center;
+  }
+
+  .typewriter {
+    position: relative;
+    top: 29vh;
+    text-align: center;
+    font-size: smaller;
+  }
+
+  #mountain {
+    position: relative;
+    top: 25vh;
+  }
+
+  .cloud2 {
+    top: 13vh;
+    left: 35vw;
+  }
+
+  #skills {
+    padding: 10px;
+  }
+
+  .photo p {
+    font-size: small;
+    line-height: 16px;
+  }
+
+  .bird2 {
+    top: 35vh;
+  }
+
+  /* projects */
+  #innerProject {
+    margin: 16px;
+    padding: 5px;
+  }
+
+  /* projects */
+
+  /* contact me */
+  form h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  form h5 {
+    line-height: 22px;
+  }
+
+  form h5 a {
+    letter-spacing: 2px;
+  }
+
+  .error-name {
+    top: 18.6em;
+  }
+
+  .error-email {
+    top: 25em;
+  }
+
+  .error-message {
+    top: 38.7em;
+  }
+
+  #send,
+  #reset {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1280px) and (orientation: portrait) {
+  .intro {
+    position: relative;
+    top: 16vh;
+  }
+
+  .typewriter {
+    position: relative;
+    top: 17vh;
+  }
+
+  #mountain {
+    position: relative;
+    top: 22vh;
+  }
+
+
+  /* .iconsBundle {
+    margin:20px;
+    padding: 2px;
+    gap: 3em;
+  } */
+
+
+}
+
+@media only screen and (width: 1024px) and (width: 1280px) and (orientation: landscape) {
+
+  #mountain {
+    position: relative;
+    top: -23vh;
+  }
+
+  #Home-btn {
+    position: relative;
+    bottom: 15em;
+  }
+}
+
+@media only screen and (width: 3840px) and (width: 1280px) and (orientation: landscape) {
+  #mountain{
+    position:relative;
+    top:2vh
+  }
+}
