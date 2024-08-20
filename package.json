@@ -4,6 +4,9 @@
   "description": "server for portfolio",
   "main": "index.js",
   "scripts": {
+    "build": "cd Client && npm run build",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kalyani Ingle",
