@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -22,6 +22,8 @@ const ContactSchema = yup.object().shape({
 });
 
 function ContactMe() {
+const [update, setUpdate] = useState('');
+
   const {
     control,
     handleSubmit,
@@ -49,6 +51,7 @@ function ContactMe() {
       });
       const result = await response.json();
       localStorage.setItem("user", JSON.stringify(result));
+      setUpdate('Sending the message, please wait!')
       if (response.ok) {
         timestamp;
         toast.success(`Message sent successfully!\n${timestamp}`);
@@ -62,6 +65,7 @@ function ContactMe() {
         setTimeout(() => {
           document.getElementById("successGif").style.display = "none";
         }, 6000);
+        setUpdate('');
       }
     } catch (error) {
       console.log("Error:", error.message);
@@ -76,6 +80,7 @@ function ContactMe() {
       setTimeout(() => {
         document.getElementById("errorGif").style.display = "none";
       }, 6000);
+      setUpdate('');
     }
   };
 
@@ -173,6 +178,8 @@ function ContactMe() {
               <SendIcon style={{ fontSize: "small" }} />
             </Button>
           </div>
+
+          <p> {update} </p>
 
           <div className="success-failure">
             <img
