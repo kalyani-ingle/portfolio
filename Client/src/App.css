@@ -396,7 +396,7 @@ form a:hover {
   position: relative;
   height: 90vh;
   width: 100%;
-  background-image: url("/public/contactBg.png");
+  background-image: url("/contactBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
