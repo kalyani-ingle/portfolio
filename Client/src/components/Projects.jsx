@@ -287,7 +287,7 @@ function Projects() {
         </Card>
         <br /> <br />
 
-        <Card>
+        {/* <Card>
           <CardActionArea>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -351,7 +351,7 @@ function Projects() {
               </Grid>
             </Grid>
           </CardActionArea>
-        </Card>
+        </Card> */}
 
       </div>
     </div>
