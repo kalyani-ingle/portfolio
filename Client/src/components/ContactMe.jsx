@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -22,8 +22,7 @@ const ContactSchema = yup.object().shape({
 });
 
 function ContactMe() {
-const [update, setUpdate] = useState('');
-
+  const [update, setUpdate] = useState("");
   const {
     control,
     handleSubmit,
@@ -39,9 +38,16 @@ const [update, setUpdate] = useState('');
   });
 
   const onSubmit = async (data) => {
+    const showUpdateFor2Seconds = (message) => {
+      setUpdate(message);
+      setTimeout(() => {
+        setUpdate("");
+      }, 1000);
+    };
+
+    showUpdateFor2Seconds("Sending, please wait!");
     const timestamp = new Date().toLocaleString();
     try {
-      // const response = await fetch(`${window.location.origin/api/}`, {
       const response = await fetch(`${window.location.origin}/api/contact`, {
         method: "POST",
         body: JSON.stringify(data),
@@ -51,36 +57,27 @@ const [update, setUpdate] = useState('');
       });
       const result = await response.json();
       localStorage.setItem("user", JSON.stringify(result));
-      setUpdate('Sending the message, please wait!')
       if (response.ok) {
         timestamp;
         toast.success(`Message sent successfully!\n${timestamp}`);
-        const notificationSound = new Audio(
-          "/new-positive-notice-161930.mp3"
-        );
-        // setShowSuccessGif(true);
+        const notificationSound = new Audio("/new-positive-notice-161930.mp3");
         notificationSound.play();
         document.getElementById("successGif").style.display = "block";
         reset();
         setTimeout(() => {
           document.getElementById("successGif").style.display = "none";
         }, 6000);
-        setUpdate('');
       }
     } catch (error) {
       console.log("Error:", error.message);
       toast.error("Failed to send message! Please try again");
-      const errorSound = new Audio(
-        "/error-call-to-attention-129258.mp3"
-      );
-      // setShowErrorGif(true);
+      const errorSound = new Audio("/error-call-to-attention-129258.mp3");
       errorSound.play();
       document.getElementById("errorGif").style.display = "block";
       reset();
       setTimeout(() => {
         document.getElementById("errorGif").style.display = "none";
       }, 6000);
-      setUpdate('');
     }
   };
 
@@ -178,9 +175,9 @@ const [update, setUpdate] = useState('');
               <SendIcon style={{ fontSize: "small" }} />
             </Button>
           </div>
-
-          <p> {update} </p>
-
+          <br />
+          {update && <div className="update-message">{update}</div>}
+          <br />
           <div className="success-failure">
             <img
               id="successGif"
