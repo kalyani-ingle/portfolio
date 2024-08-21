@@ -14,10 +14,9 @@ function Skills() {
           <h1>Hello!</h1>
           <p>
             I&apos;m Kalyani Ingle – an Architect, Urban Planner and
-            a Software Developer. My journey into software development kicked
-            off after I completed my PhD. During my PhD research, I dove into Python leveraging it for advanced data analysis, statistical modeling, and visualizations, which sparked my interest in programming. In December 2022, I graduated with my Doctoral
-            Degree in Urban Planning from IIT Kharagpur. Since then, I&apos;ve picked up skills in technologies like
-            JavaScript, ReactJS, Express, Svelte and more. I&apos;m excited to take on complex problems and learn new aspects of software development moving forward.
+            a Software Developer. My journey into web development kicked
+            off after I completed my PhD. During my PhD research, I dove into Python leveraging it for advanced data analysis, statistical modeling, and visualizations, which sparked my interest in programming. In December 2022, I graduated with a Doctoral
+            Degree in Urban Planning from IIT Kharagpur. Since then, I&apos;ve picked up skills in technologies like JavaScript, ReactJS, Express, Svelte and more. I&apos;m excited to take on complex problems and learn new aspects of web development moving forward.
             <br/> 
             <HashLink smooth to="#projects">
               <Button

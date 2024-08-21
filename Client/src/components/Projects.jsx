@@ -50,7 +50,7 @@ function Projects() {
                   >
                     <ul>
                       <li>
-                        <strong>User Registration: </strong>Users are requiredt to register to the portal before proceeding to the pet registration form.
+                        <strong>User Registration: </strong>Users are required to register to the portal before proceeding to the pet registration form.
                         The user input is validated against respective regex. 
                       </li>
                       <li>
@@ -58,7 +58,7 @@ function Projects() {
                       </li>
 
                       <li>
-                        <strong>Private Routes: </strong>Implemented authentication based access to the pet registration route. JWT is used to authenticate the user
+                        <strong>Private Routes: </strong>Implemented token (JWT) authentication based access to the pet registration route. 
                       </li>
                       <li>
                         <strong> Form Data Storage: </strong> Capture data from user/pet registration forms and store it securely in mongodb.
@@ -144,9 +144,6 @@ function Projects() {
           </CardActionArea>
         </Card>
         <br /> <br />
-
-      
-        
 
         <Card>
           <CardActionArea>
@@ -234,7 +231,7 @@ function Projects() {
                     color="text.secondary"
                     className="subtitle"
                   >
-                    HTML | CSS | JAVASCRIPT
+                    JAVASCRIPT
                   </Typography>
                   <Typography
                     variant="body2"
@@ -243,7 +240,7 @@ function Projects() {
                     component="div"
                   >
                     <ul>
-                      Developed as a part of a Frontend Mentor challenge:
+                      Developed as a part of a Frontend Mentor challenge: The calculator UI was provided beforehand while JS logic building was the main challenge
                       <li>
                         <strong> Basic Arithmetic Operations:</strong> Perform
                         addition, subtraction, multiplication, and division.
