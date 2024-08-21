@@ -53,7 +53,7 @@ function ContactMe() {
         timestamp;
         toast.success(`Message sent successfully!\n${timestamp}`);
         const notificationSound = new Audio(
-          "/public/new-positive-notice-161930.mp3"
+          "/new-positive-notice-161930.mp3"
         );
         // setShowSuccessGif(true);
         notificationSound.play();
@@ -67,7 +67,7 @@ function ContactMe() {
       console.log("Error:", error.message);
       toast.error("Failed to send message! Please try again");
       const errorSound = new Audio(
-        "/public/error-call-to-attention-129258.mp3"
+        "/error-call-to-attention-129258.mp3"
       );
       // setShowErrorGif(true);
       errorSound.play();
