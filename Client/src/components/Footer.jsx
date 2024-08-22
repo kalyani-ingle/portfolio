@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import { useMemo } from "react";

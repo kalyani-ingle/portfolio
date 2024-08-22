@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -85,35 +87,14 @@ function ContactMe() {
     <div id="contact">
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h1>Get in touch</h1>
+          <h1>Reach out</h1>
           <h5>
-            {" "}
-            Kalyani Ingle
-            <br />
             <a href="mailto:kalyaniingle.iitkgp@gmail.com">
-              {" "}
-              kalyaniingle.iitkgp@gmail.com{" "}
+              kalyani@runcode.io
             </a>
+            <br />
+            Kalyani Ingle
           </h5>
-          <div id="socials">
-            <a
-              href="https://www.linkedin.com/in/kalyani-ingle/"
-              alt="LinkedIn_KalyaniIngle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-            </a>
-
-            <a
-              href="https://github.com/kalyani-ingle"
-              alt="GitHub_KalyaniIngle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-            </a>
-          </div>
           <div className="input">
             <Controller
               name="name"
