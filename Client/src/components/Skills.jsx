@@ -44,6 +44,7 @@ function Skills() {
           >
             <i className="fab fa-linkedin"></i>
           </a>
+          &nbsp;
           <a
             href="https://github.com/kalyani-ingle"
             target="_blank"
@@ -128,7 +129,6 @@ function Skills() {
             alt="Figma"
           />
         </div>
-
       </div>
     </section>
   );
