@@ -12,7 +12,7 @@ function Skills() {
           src="/kalyaniResumePic.jpg"
           alt="Web Developer Portfolio: Kalyani Ingle"
         />
-        <h1>Hello!</h1>
+        <h1>Hey!</h1>
         <div
           id="education"
           style={{
@@ -30,15 +30,27 @@ function Skills() {
             width="35"
             alt="Education Icon"
           />
-          <p style={{borderLeft:"1px dotted purple", padding:'5px'}}>
+          <p style={{ borderLeft: "1px dotted purple", padding: "5px" }}>
             B.Arch, Master of City Planning (MCP) and PhD in Urban Planning from
             IIT Kharagpur
           </p>
         </div>
         <hr className="gradient-hr" />
         <div id="socials">
-          <a href="https://www.linkedin.com/in/kalyani-ingle/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" ></i></a>
-          <a href="https://github.com/kalyani-ingle" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/kalyani-ingle/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/kalyani-ingle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
         </div>
         <p id="pcenter">
           After completing my PhD, I took an unexpected turn – straight into the
@@ -46,8 +58,8 @@ function Skills() {
           data analysis, statistical modeling, and visualization during my
           research quickly ignited a passion for programming. By December 2022,
           I earned my Doctoral Degree from IIT Kharagpur and a new set of skills
-          to boot! Since then, I&apos;ve been on a quest to learn technologies like
-          JavaScript, ReactJS, Express, Svelte, and beyond.
+          to boot! Since then, I&apos;ve been on a quest to master technologies
+          like JavaScript, ReactJS, Express, Svelte, and beyond.
           <br />
           <HashLink smooth to="#projects">
             <Button variant="outlined" style={{ marginTop: "14px" }}>
@@ -116,10 +128,6 @@ function Skills() {
             alt="Figma"
           />
         </div>
-
-
-
-
 
       </div>
     </section>

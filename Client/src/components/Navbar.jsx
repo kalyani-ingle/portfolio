@@ -18,21 +18,18 @@ function Navbar() {
           <ul>
             <li>
               <HashLink smooth to="#about">
-                {" "}
-                About
-              </HashLink>{" "}
+            <i className="fas fa-user"/>&nbsp;About
+              </HashLink>
             </li>
             <li>
               <HashLink smooth to="#projects">
-                {" "}
-                Projects
-              </HashLink>{" "}
+              <i className="fas fa-briefcase"/>&nbsp;Projects
+              </HashLink>
             </li>
             <li>
               <HashLink smooth to="#contact">
-                {" "}
-                Contact
-              </HashLink>{" "}
+            <i className="fas fa-envelope"/>&nbsp;Contact
+              </HashLink>
             </li>
           </ul>
         </nav>

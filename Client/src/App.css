@@ -42,21 +42,32 @@ nav ul {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0;
+  margin: 0; 
+  list-style: none; 
 }
 
 nav ul li {
-  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 15px; 
 }
 
 nav ul li a {
-  margin: 0 25px;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: x-large;
+  font-size: large; 
   color: #ca1b7b;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+nav ul li a i {
+  font-size: 24px; 
+  margin-bottom: 5px;
 }
 
 nav ul li a:hover,
@@ -317,7 +328,7 @@ form a:hover {
 .photo .gradient-hr{
   border: none;
   height: 2px;
-  background: linear-gradient(to right, pink, blue, yellow, green); /* Gradient */
+  background: linear-gradient(to right, pink, blue, yellow, green);
   margin: 10px 0;
 }
 
@@ -326,7 +337,6 @@ form a:hover {
 }
 
 .iconsBundle {
-  /* margin:12px; */
   margin:25px;
   padding: 2px;
   display: grid;
@@ -430,8 +440,11 @@ form h1 {
   font-family: "Sacramento", cursive;
   color: rgb(206, 83, 181);
   text-align: center;
-  padding: 10px 25px;
+  padding: 10px 25px 1px;
   letter-spacing: 4px;
+}
+form img{
+  padding-bottom: 2px;
 }
 
 form h5 {
@@ -493,18 +506,15 @@ form p {
 }
 
 .error-name {
-  /* top: 20.8em; */
-  top: 16.8em;
+  top: 19.2em;
 }
 
 .error-email {
-  /* top: 27.3em; */
-  top: 23.6em;
+  top: 25.7em;
 }
 
 .error-message {
-  /* top: 41em; */
-  top: 37.4em;
+  top: 39.5em;
 }
 
 form p::before {
@@ -622,10 +632,10 @@ form .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 40px;
   text-align: center;
   font-size: 15px;
-  color: rgb(235, 119, 80);
+  color: rgb(222, 70, 169);
 }
 
 .scroll-up {
@@ -698,6 +708,7 @@ form .button-container {
   }
 
   /* projects */
+
   #innerProject {
     margin: 16px;
     padding: 5px;
@@ -720,18 +731,15 @@ form .button-container {
   }
 
   .error-name {
-    /* top: 18.6em; */
-    top: 14.6em;
+    top: 16.7em;
   }
 
   .error-email {
-    /* top: 25em; */
-    top: 21em;
+    top: 23.2em;
   }
 
   .error-message {
-    /* top: 38.7em; */
-    top: 34.7em;
+    top: 37.1em;
   }
 
   #send,
@@ -755,19 +763,9 @@ form .button-container {
     position: relative;
     top: 22vh;
   }
-
-
-  /* .iconsBundle {
-    margin:20px;
-    padding: 2px;
-    gap: 3em;
-  } */
-
-
 }
 
 @media only screen and (width: 1024px) and (width: 1280px) and (orientation: landscape) {
-
   #mountain {
     position: relative;
     top: -23vh;

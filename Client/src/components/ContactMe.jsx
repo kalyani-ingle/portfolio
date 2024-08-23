@@ -87,9 +87,17 @@ function ContactMe() {
     <div id="contact">
       <div className="form">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h1>Reach out</h1>
+          <h1>Reach out at</h1>
           <h5>
-            <a href="mailto:kalyaniingle.iitkgp@gmail.com">
+            <img
+              src="/message.png"
+              alt="email"
+              height="40px"
+              width="40px"
+              align="center"
+            />
+            <br />
+            <a href="mailto:kalyani@runcode.io">
               kalyani@runcode.io
             </a>
             <br />

@@ -24,12 +24,12 @@ function Footer() {
   return (
     <div id="footer">
       <p>
-        <CopyrightIcon style={{ fontSize: "small", color: "#f086ad" }} />{" "}
-        {copyrightDate} • All Rights Reserved <br />
+        <CopyrightIcon style={{ fontSize: "small", color: "#f086ad" }}/>&nbsp;
+        {copyrightDate}&nbsp; •&nbsp; Yay 🎉, made it to the prod! ✨ 🚀 &nbsp;•  
       </p>
       <ArrowCircleUpIcon
         className="custom-icon scroll-up"
-        style={{ fontSize: "40px" }}
+        style={{ fontSize: "35px" }}
         id="scroll-up"
         onClick={handleUp}
         aria-label="Scroll to top"
