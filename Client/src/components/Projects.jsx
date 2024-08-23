@@ -28,7 +28,7 @@ const projects = [
     tech: "SVELTE | CSS | HTML",
     description: [
       { header: "Intuitive user interface", text: "Users can easily add, edit, and delete tasks" },
-      { header: "Local storage integration for data persistence", text: "All tasks are automatically saved to the browser&apos;s local storage, ensuring data persistence across sessions and page reloads." },
+      { header: "Local storage integration for data persistence", text: "All tasks are automatically saved to the browser's local storage, ensuring data persistence across sessions and page reloads." },
       { header: "Real-time task list updates", text: "The task list updates instantly as users add, modify, or remove items, providing immediate visual feedback." },
       { header: "Modal-based task editing with user notifications", text: "Tasks can be edited via a pop-up modal. Users receive notifications for successful updates or when no changes are made." }
     ],
